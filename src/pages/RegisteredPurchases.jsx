@@ -40,7 +40,14 @@ const RegisteredPurchases = () => {
 
   if (loading)
     return (
-      <div className="bg-dark text-white min-vh-100 d-flex align-items-center justify-content-center">
+      <div className="bg-dark text-white min-vh-100 d-flex flex-column align-items-center justify-content-center">
+        <Alert
+          variant="warning"
+          className="text-center fw-semibold shadow-sm mb-3 w-75"
+        >
+          El servidor está en reposo, espere unos segundos en lo que se
+          rehabilita, si tarda mucho recarga la página.
+        </Alert>
         <Spinner animation="border" variant="light" />
       </div>
     );
